@@ -1169,7 +1169,7 @@ QFrame{background:#2c2c2c;}
 
     def add_local_editor(self):
         """手动添加本地已经解压好的编辑器版本"""
-        folder = QFileDialog.getExistingDirectory(self, "选择已解压的AoiStudio编辑器根目录")
+        folder = QFileDialog.getExistingDirectory(self, "选择已解压的AoiStudio编辑器根目录的上一级")
         if not folder:
             return
         tag_input, ok = QInputDialog.getText(self, "填写版本Tag", "请输入该版本的tag名称(例如v1.1.0)：")
